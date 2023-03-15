@@ -22,6 +22,9 @@ read -p ''
 
 clear
 echo -e 'Se realiza el push hacia el repositorio remoto...\n'
+echo -e '\nRamas disponibles:'
+git branch -r
+echo -e '\n'
 read -p 'Ingresa el nombre de la rama: ' rama
 git push origin "$rama"
 echo -e '\nPresiona ENTER para continuar...'
