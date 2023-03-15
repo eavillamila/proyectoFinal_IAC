@@ -2,6 +2,7 @@ version: "2.2"
 services:
   web:
     build: .
+    image: app-py:1.0.0
     ports:
       - "8000:5000"
   redis:
