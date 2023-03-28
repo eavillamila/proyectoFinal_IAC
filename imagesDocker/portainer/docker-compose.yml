@@ -1,7 +1,8 @@
 version: "1.0"
 services:
   portainer-ce:
-    image: 
+    image: portainer/portainer-ce 
+    container_name: portainer-ce
     ports:
       - 8000:8000
       - 9443:9443
