@@ -8,5 +8,5 @@ services:
       - 9443:9443
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - portainer_data:/data portainer/portainer-ce:latest
+      - /var/lib/docker/volumes/portainer_data:/data portainer/portainer-ce:latest
     restart: always
